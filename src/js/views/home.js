@@ -1,15 +1,24 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
+import WeatherInfo from "../component/weatherInfo.jsx";
+import WeatherInput from "../component/weatherInput.jsx";
 
+// ES6 Modules or TypeScript
+import Swal from "sweetalert2";
+
+// CommonJS
 export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
+	<div className="container text-center">
+		<h1 data-text="Wheather app">Weather app</h1> <div className="bg" />
+		<div className="bg bg2" />
+		<div className="bg bg3" />
+		<div className="content" />
+		<>
+			<WeatherInput />
+		</>
+		<br />
+		<>
+			<WeatherInfo />
+		</>
 	</div>
 );

@@ -1,0 +1,124 @@
+h1{
+  text-transform: uppercase;
+  font-size: 7rem;
+  text-align: center;
+    color: black;
+  
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+h1:before{
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(#f70000, #f89200, #f8f501, #038f00,#0168f8, #a200f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100% 90%;
+  line-height: 0.9;
+  clip-path: ellipse(120px 120px at -2.54% -9.25%);
+  animation: swing 5s infinite;
+  animation-direction: alternate;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes swing{
+  0%{
+    clip-path: ellipse(120px 120px at -2.54% -9.25%)
+  }
+  50%{
+    clip-path: ellipse(120px 120px at 49.66% 64.36%);
+
+  }
+  100%{
+    clip-path: ellipse(120px 120px at 102.62% -1.61%)
+  }
+}
+
+
+
+// Fondo animado
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+// Texto normal
+small {
+   font-size: 25px;
+  color: black;
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+}
+label {
+   font-size: 45px;
+  color: black;
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+p {
+     color: black;
+  -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; 
+}
+
+#perfil {
+    -webkit-text-fill-color: rgb(248, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); 
+}
+
+//From y boton
+#InputCity {
+    border: solid black 2px;
+}
+#boton {
+    border: solid black 2px;
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+}
+// carta
+#infoCard {
+        border: solid black 2px;
+
+}
