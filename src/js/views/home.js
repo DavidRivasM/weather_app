@@ -8,11 +8,15 @@ import Swal from "sweetalert2";
 
 // CommonJS
 export const Home = () => (
-	<div className="container text-center">
-		<h1 data-text="Wheather app">Weather app</h1> <div className="bg" />
-		<div className="bg bg2" />
-		<div className="bg bg3" />
-		<div className="content" />
+	<div className="container-fluid text-center">
+		<div className="row justify-content-center text-center">
+			<h1 data-text="Wheather app">Weather app</h1>
+			<div className="bg" />
+			<div className="bg bg2" />
+			<div className="bg bg3" />
+			<div className="content" />
+		</div>
+		<br />
 		<>
 			<WeatherInput />
 		</>

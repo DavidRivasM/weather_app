@@ -15,14 +15,16 @@ export const WeatherInput = () => {
 			<p />;
 		} else {
 			return (
-				<div id="infoCard" className="card">
-					<img id="imageInfo" src={store.icono} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<p className="card-text">
-							The consulted zone called {store.nombre} which is part of {store.estado} of the country{" "}
-							{store.pais}, has a temperature of {store.temperatura} grades centrigrates and in this
-							moment it´s weather is {store.condicion}.
-						</p>
+				<div className="row">
+					<div id="infoCard" className="card">
+						<img id="imageInfo" src={store.icono} className="card-img-top" alt="..." />
+						<div className="card-body">
+							<p className="card-text">
+								The consulted zone called {store.nombre} which is part of {store.estado} of the country{" "}
+								{store.pais}, has a temperature of {store.temperatura} grades centrigrates and in this
+								moment it´s weather is {store.condicion}.
+							</p>
+						</div>
 					</div>
 				</div>
 			);
